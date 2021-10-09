@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+/*import { ReactKeycloakProvider } from '@react-keycloak/web'
+import keycloak from './keycloak'*/
 
-function App() {
+const App = () => {
+/*  const onClick = async () => {
+    fetch("http://localhost:8090/me").then(res => console.log(res)).catch(e => console.log(e))
+  }*/
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      // <ReactKeycloakProvider authClient={keycloak}>
+      //   <div className="App"> ... </div>
+       //   <button onClick={onClick}>Sign In</button>
+      <a href="http://localhost:8090/me">Sign In</a>
+      // </ReactKeycloakProvider>
+  )
 }
 
-export default App;
+export default App

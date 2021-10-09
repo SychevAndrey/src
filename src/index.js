@@ -3,10 +3,35 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+/*import {
+    ApolloClient,
+    InMemoryCache,
+    ApolloProvider,
+    useQuery,
+    gql
+} from "@apollo/client";
+
+const client = new ApolloClient({
+    uri: 'http://datahub.yc.pbd.ai:9002/api/grapiql',
+    cache: new InMemoryCache()
+});
+
+client
+    .query({
+        query: gql`{
+          dataset(urn:"urn:li:dataset:(urn:li:dataPlatform:hive,fct_users_created,PROD)") {
+            status {
+              removed
+            }
+    }
+}
+    `
+    })
+    .then(result => console.log(result));*/
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+          <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
